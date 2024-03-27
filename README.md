@@ -41,3 +41,13 @@ java -jar sikulix.jar
 Running Your Sikuli Scripts: Now, you can create and run Sikuli scripts using the SikuliX IDE.
 
 Remember, Sikuli is heavily dependent on screen resolution and the graphical interface, so running it on a headless RPI4 (without a connected monitor) won't work out of the box. Also, performance might vary due to the RPI4's hardware constraints compared to a typical desktop environment where Sikuli is usually run.
+
+
+
+ ^Cadmin@raspberrypi:~/SikuliX $ java -jar sikulixide-2.0.5-lux.jar 
+[error] RunTime:loadLib: libJXGrabKey.so (failed) probably dependent libs missing:
+/home/admin/.Sikulix/SikulixLibs/libJXGrabKey.so: /home/admin/.Sikulix/SikulixLibs/libJXGrabKey.so: cannot open shared object file: No such file or directory (Possible cause: can't load AMD 64 .so on a AARCH64 platform)
+[error] Save your work, correct the problem and restart the IDE!
+[error] see: https://github.com/RaiMan/SikuliX1/wiki/macOS-Linux:-Support-Libraries-for-OpenCV-4
+TERMINATING: problem with native library: libJXGrabKey.so
+Opening in existing browser session.
